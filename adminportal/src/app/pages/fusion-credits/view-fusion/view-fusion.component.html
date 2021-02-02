@@ -1,0 +1,31 @@
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Manufacturer</th>
+      <th>Amount</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let fusionCredit of portalSync.fusionCredits">
+      <td>{{carManufacturerEnumMap[fusionCredit.manufacturerId]}}</td>
+      <td>
+        <input class="form-control" min="0" id="fusionCreditsAmount" type="number" [(ngModel)]="fusionCredit.amount" name="fusionCreditsAmount">
+      </td>
+      <td>
+        <button (click)="decreaseItem(fusionCreditsAmount)" class="btn btn-danger"><i class="fa fa-minus"></i></button>
+        <button (click)="increaseItem(fusionCreditsAmount)" class="btn btn-success"><i class="fa fa-plus"></i></button>
+      </td>
+    </tr>
+  </tbody>
+
+
+</table>
+<div class="row">
+
+  <div class="col text-right">
+    <button class="btn btn-secondary" (click)="cancel()">Clear</button>
+    <button class="btn btn-success" (click)="onSubmit()" style="margin-right: 10px">Save</button>
+  </div>
+</div>

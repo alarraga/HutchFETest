@@ -1,0 +1,47 @@
+<form class="form-horizontal" #dailyGiftForm="ngForm">
+  
+  <div class="col-sm-12">
+    <!-- totalGiftsClaimed -->
+    <div class="form-group">
+      <label class="col-sm-3 control-label" for="totalGiftsClaimed">Total Gifts Claimed:</label>
+      
+      <input class="col-sm-3" id="totalGiftsClaimed" [disabled]="true" [(ngModel)]="portalSync.dailyGift && portalSync.dailyGift.totalGiftsClaimed" name="totalGiftsClaimed">
+     
+      <span class="col-sm-2"></span>
+      <button class="col-sm-2 btn btn-success" type="button"><span class="fa fa-arrow-up"></span> Claim Gift</button>
+      <span class="col-sm-2"></span>
+      
+    </div>
+    <!-- dateNextGiftAvailable -->
+    <div class="form-group">
+      <label class="col-sm-3 control-label" for="dateNextGiftAvailable">Date Next Gift Available:</label>
+      <input class="col-sm-5" id="dateNextGiftAvailable" [disabled]="true" [(ngModel)]="portalSync.dailyGift && portalSync.dailyGift.dateNextGiftAvailable" name="dateNextGiftAvailable">
+      <div class="col-sm-4"></div>
+    </div>
+    <!-- dateNextConsecutiveGiftAvailable -->
+    <div class="form-group">
+      <label class="col-sm-3 control-label" for="dateNextConsecutiveGiftAvailable">Date Next Consecutive Gift Available:</label>
+      <input class="col-sm-5" id="dateNextConsecutiveGiftAvailable" [disabled]="true" [(ngModel)]="portalSync.dailyGift && portalSync.dailyGift.dateNextConsecutiveGiftAvailable" name="dateNextConsecutiveGiftAvailable">
+      <span class="col-sm-2"></span>
+      <button class="col-sm-2 btn btn-danger" type="button"><span class="fa fa-unlock-alt"></span> Unlock</button>
+      
+    </div>
+    <!-- consecutiveGiftsClaimed -->
+    <div class="form-group">
+      <label class="col-sm-3 control-label" for="consecutiveGiftsClaimed">Consecutive Gifts Claimed:</label>
+      
+      <input class="col-sm-5" id="consecutiveGiftsClaimed" [disabled]="true" [(ngModel)]="portalSync.dailyGift && portalSync.dailyGift.consecutiveGiftsClaimed" name="consecutiveGiftsClaimed">
+      
+      <div class="col-sm-4"></div>
+    </div>
+    <!-- maxConsecutiveGiftsClaimed -->
+    <div class="form-group">
+      <label class="col-sm-3 control-label" for="maxConsecutiveGiftsClaimed">Max Consecutive Gifts Claimed:</label>
+      
+      <input class="col-sm-5" id="maxConsecutiveGiftsClaimed" [disabled]="true" [(ngModel)]="portalSync.dailyGift && portalSync.dailyGift.maxConsecutiveGiftsClaimed" name="maxConsecutiveGiftsClaimed">
+      
+      <div class="col-sm-4"></div>
+    </div>
+  </div>
+  
+</form>

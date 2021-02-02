@@ -1,0 +1,22 @@
+<div class="table-responsive table-striped">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Verbosity</th>
+        <th>Timestamp</th>
+        <th>Scope</th>
+        <th>RequestId</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let log of portalSync.logEntries" [ngClass]="{ danger: log.verbosity === 'ERROR', warning: log.verbosity === 'WARN' }">
+        <td>{{log.verbosity}}</td>
+        <td>{{log.timestamp}}</td>
+        <td>{{log.scope}}</td>
+        <td>
+          <a href="javascript:void(0);">{{log.requestId}}</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

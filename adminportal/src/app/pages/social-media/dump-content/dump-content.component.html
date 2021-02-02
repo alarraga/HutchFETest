@@ -1,0 +1,26 @@
+<div class="table-responsive table-striped">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Social Type</th>
+        <th>Social Id</th>
+        <th>User Name</th>
+        <th>Email</th>
+        <th>Locale</th>
+        <th>Region</th>
+        <th>Is Dissociated</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let details of portalSync.socialAccounts">
+        <td>{{details.socialType}}</td>
+        <td>{{details.socialId}}</td>
+        <td>{{details.socialDetails.name}}</td>
+        <td>{{details.socialDetails.email}}</td>
+        <td>{{details.socialDetails.locale}}</td>
+        <td>{{details.region}}</td>
+        <td>{{details.isDissociated}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

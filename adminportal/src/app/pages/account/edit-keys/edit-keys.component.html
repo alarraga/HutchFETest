@@ -1,0 +1,182 @@
+<div class="panel-body">
+  <form #userForm="ngForm">
+    <div class="form-group">
+      <div class="row">
+        <div class="col-sm-2">
+          <label class="control-label" for="hardCurrency1">Gold</label>
+        </div>
+        <div class="col-sm-8">
+          <input class="form-control" min="0" #hardCurrency1 id="hardCurrency1" type="number" [ngModel]="portalSync.userProfile && portalSync.userProfile.hardCurrency1" name="hardCurrency1">
+        </div>
+        <div class="col-sm-2">
+          <div class="form-group mb-0">
+            <button (click)="decreaseItem(hardCurrency1)" class="btn btn-danger"><i class="fa fa-minus"></i></button>
+            <button (click)="increaseItem(hardCurrency1)" class="btn btn-success"><i class="fa fa-plus"></i></button>
+          
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <!-- hardCurrency2 -->
+    <div class="form-group">
+      <div class="row">
+        <div class="col-sm-2">
+          <label class="control-label" for="hardCurrency2">Cash</label>
+        </div>
+        <div class="col-sm-8">
+          <input class="form-control" min="0" #hardCurrency2 id="hardCurrency2" type="number" [ngModel]="portalSync.userProfile && portalSync.userProfile.hardCurrency2" name="hardCurrency2">
+        </div>
+        <div class="col-sm-2">
+          <div class="form-group mb-0">
+            <button (click)="decreaseItem(hardCurrency2)" class="btn btn-danger"><i class="fa fa-minus"></i></button>
+            <button (click)="increaseItem(hardCurrency2)" class="btn btn-success"><i class="fa fa-plus"></i></button>
+          
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+    <!-- softCurrency1 -->
+    <div class="form-group">
+      <div class="row">
+        <div class="col-sm-2">
+          <label class="control-label" for="softCurrency1">Fusion Points</label>
+        </div>
+        <div class="col-sm-8">
+          <input class="form-control" min="0" #softCurrency1 id="softCurrency1" type="number" [ngModel]="portalSync.userProfile && portalSync.userProfile.softCurrency1" name="softCurrency1">
+        </div>
+        <div class="col-sm-2">
+          <div class="form-group  mb-0">
+            <button (click)="decreaseItem(softCurrency1)" class="btn btn-danger"><i class="fa fa-minus"></i></button>
+            <button (click)="increaseItem(softCurrency1)" class="btn btn-success"><i class="fa fa-plus"></i></button>
+          
+          </div>
+        </div>
+       
+      </div>
+    </div>
+    <!-- bronzeKeys -->
+    <div class="form-group">
+      <div class="row">
+        <div class="col-sm-2">
+          <label class="control-label" for="bronzeKeys">Bronze Keys</label>
+        </div>
+        <div class="col-sm-8">
+          <input class="form-control" min="0" #bronzeKeys id="bronzeKeys" type="number" [ngModel]="portalSync.userProfile && portalSync.userProfile.bronzeKeys" name="bronzeKeys">
+        </div>
+        <div class="col-sm-2">
+          <div class="form-group  mb-0">
+            <button (click)="decreaseItem(bronzeKeys)" class="btn btn-danger"><i class="fa fa-minus"></i></button>
+            <button (click)="increaseItem(bronzeKeys)" class="btn btn-success"><i class="fa fa-plus"></i></button>
+          
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <!-- silverKeys -->
+    <div class="form-group">
+      <div class="row">
+        <div class="col-sm-2">
+          <label class="control-label" for="silverKeys">Silver Keys</label>
+        </div>
+        <div class="col-sm-8">
+          <input class="form-control" #silverKeys min="0" id="silverKeys" type="number" [ngModel]="portalSync.userProfile && portalSync.userProfile.silverKeys" name="silverKeys">
+        </div>
+        <div class="col-sm-2">
+          <div class="form-group mb-0">
+            <button (click)="decreaseItem(silverKeys)" class="btn btn-danger"><i class="fa fa-minus"></i></button>
+            <button (click)="increaseItem(silverKeys)" class="btn btn-success"><i class="fa fa-plus"></i></button>
+          
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <!-- goldKeys -->
+    <div class="form-group">
+      <div class="row">
+        <div class="col-sm-2">
+          <label class="control-label" for="goldKeys">Gold Keys</label>
+        </div>
+        <div class="col-sm-8">
+          <input class="form-control" #goldKeys min="0" id="goldKeys" type="number" [ngModel]="portalSync.userProfile && portalSync.userProfile.goldKeys" name="goldKeys">
+        </div>
+        <div class="col-sm-2">
+          <div class="form-group  mb-0">
+            <button (click)="decreaseItem(goldKeys)" class="btn btn-danger"><i class="fa fa-minus"></i></button>
+            <button (click)="increaseItem(goldKeys)" class="btn btn-success"><i class="fa fa-plus"></i></button>
+          
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <!-- xp -->
+    <div class="form-group">
+      <div class="row">
+        <div class="col-sm-2">
+          <label class="control-label" for="xp">XP</label>
+        </div>
+        <div class="col-sm-8">
+          <input class="form-control" #xp min="0" id="xp" type="number" [ngModel]="portalSync.userProfile && portalSync.userProfile.xp" name="xp">
+        </div>
+        <div class="col-sm-2">
+          <div class="form-group  mb-0">
+            <button (click)="decreaseItem(xp)" class="btn btn-danger"><i class="fa fa-minus"></i></button>
+            <button (click)="increaseItem(xp)" class="btn btn-success"><i class="fa fa-plus"></i></button>
+          
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <!-- level -->
+    <div class="form-group">
+      <div class="row">
+        <div class="col-sm-2">
+          <label class="control-label" for="level">Level</label>
+        </div>
+        <div class="col-sm-8">
+          <input class="form-control" #level min="0" id="level" type="number" [ngModel]="portalSync.userProfile && portalSync.userProfile.level" name="level">
+        </div>
+        <div class="col-sm-2">
+          <div class="form-group mb-0">
+            <button (click)="decreaseItem(level)" class="btn btn-danger"><i class="fa fa-minus"></i></button>
+            <button (click)="increaseItem(level)" class="btn btn-success"><i class="fa fa-plus"></i></button>
+          
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <!-- level -->
+    <div class="form-group">
+      <div class="row">
+        <div class="col-sm-2">
+          <label class="control-label" for="trophies">Trophies</label>
+        </div>
+        <div class="col-sm-8">
+          <input class="form-control" #trophies min="0" id="trophies" type="number" [ngModel]="portalSync.userProfile && portalSync.userProfile.trophies" name="trophies">
+        </div>
+        <div class="col-sm-2">
+          <div class="form-group  mb-0">
+            <button (click)="decreaseItem(trophies)" class="btn btn-danger"><i class="fa fa-minus"></i></button>
+            <button (click)="increaseItem(trophies)" class="btn btn-success"><i class="fa fa-plus"></i></button>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col text-right">
+        <button class="btn btn-secondary" (click)="cancel()">Clear</button>
+        <button class="btn btn-success" (click)="onSubmit()" style="margin-right: 10px">Save</button>
+      </div>
+    </div>
+  </form>
+</div>

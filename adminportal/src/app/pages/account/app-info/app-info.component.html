@@ -1,0 +1,165 @@
+<div class="panel-body">
+  <form class="form-horizontal" #userForm="ngForm">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-8">
+      <!-- hutchId -->
+      <div class="form-group">
+        <div class="row">
+          <div class="col-sm-4">
+            <label class="control-label" for="hutchId">Hutch Id</label>
+          </div>
+          <div class="col-sm-8">
+            <input class="form-control" id="hutchId" [(ngModel)]="portalSync.userProfile && portalSync.userProfile.hutchId" name="hutchId">
+          </div>
+        </div>
+      </div>
+      <!-- appId -->
+      <div class="form-group">
+        <div class="row">
+          <div class="col-sm-4">
+            <label class="control-label" for="appId">App Id</label>
+          </div>
+          <div class="col-sm-8">
+            <input class="form-control" id="appId" [(ngModel)]="portalSync.userProfile && portalSync.userProfile.appId" name="appId">
+          </div>
+        </div>
+      </div>
+      <!-- social name -->
+      <div class="form-group">
+        <div class="row">
+          <div class="col-sm-4">
+            <label class="control-label" for="socialName">Social Display Name</label>
+          </div>
+          <div class="col-sm-8">
+            <input class="form-control" id="socialName" [(ngModel)]="portalSync.userProfile && portalSync.userProfile.socialName" name="socialName">
+          </div>
+        </div>
+      </div>
+      <!-- cheater -->
+      <div class="form-group">
+        <div class="row">
+          <div class="col-sm-4">
+            <label class="control-label" for="isCheater">Cheater</label>
+          </div>
+          <div class="col-sm-8">
+          </div>
+        </div>
+      </div>
+      <!-- banned -->
+      <div class="form-group">
+        <div class="row">
+          <div class="col-sm-4">
+            <label class="control-label" for="accountStatus">Account Status</label>
+          </div>
+          <div class="col-sm-8">
+          </div>
+        </div>
+      </div>
+      <!-- VIP tier 0 -->
+      <div class="form-group">
+        <div class="row">
+          <div class="col-sm-4">
+            <label class="control-label" for="spender">Spender</label>
+          </div>
+          <div class="col-sm-8">
+          </div>
+        </div>
+      </div>
+      <!-- VIP tier 1 -->
+      <div class="form-group">
+        <div class="row">
+          <div class="col-sm-4">
+            <label class="control-label" for="vip1">VIP Tier 1 Member</label>
+          </div>
+          <div class="col-sm-8">
+          </div>
+        </div>
+      </div>
+      <!-- VIP tier 2 -->
+      <div class="form-group">
+        <div class="row">
+          <div class="col-sm-4">
+            <label class="control-label" for="vip2">VIP Tier 2 Member</label>
+          </div>
+          <div class="col-sm-8">
+          </div>
+        </div>
+      </div>
+      <!-- VIP tier 3 -->
+      <div class="form-group">
+        <div class="row">
+          <div class="col-sm-4">
+            <label class="control-label" for="vip3">VIP Tier 3 Member</label>
+          </div>
+          <div class="col-sm-8">
+          </div>
+        </div>
+      </div>
+      <!-- VIP tier 4 -->
+      <div class="form-group">
+        <div class="row">
+          <div class="col-sm-4">
+            <label class="control-label" for="vip4">VIP Tier 4 Member</label>
+          </div>
+          <div class="col-sm-8">
+          </div>
+        </div>
+      </div>
+      <!-- Limited Data Use flag -->
+      <div class="form-group">
+        <div class="row">
+          <div class="col-sm-4">
+            <label class="control-label" for="ldu">Limited Data Use</label>
+          </div>
+          <div class="col-sm-8">
+          </div>
+        </div>
+      </div>
+      <!-- deviceId -->
+      <div class="form-group">
+        <div class="row">
+          <div class="col-sm-4">
+            <label class="control-label" for="deviceId">Device Id</label>
+          </div>
+          <div class="col-sm-8">
+            <input class="form-control" id="deviceId" [(ngModel)]="portalSync.userProfile && portalSync.userProfile.deviceId" name="deviceId">
+          </div>
+        </div>
+      </div>
+      <!-- region -->
+      <div class="form-group">
+        <div class="row">
+          <div class="col-sm-4">
+            <label class="control-label" for="region">Region</label>
+          </div>
+          <div class="col-sm-8">
+            <input class="form-control" id="region" [(ngModel)]="portalSync.userProfile && portalSync.userProfile.region" name="region">
+          </div>
+        </div>
+      </div>
+      <!-- registration date -->
+      <div class="form-group">
+        <div class="row">
+          <div class="col-sm-4">
+            <label class="control-label" for="registrationDate">Registration Date</label>
+          </div>
+          <div class="col-sm-8">
+            <input class="form-control" id="registrationDate" [(ngModel)]="portalSync.userProfile && portalSync.userProfile.registrationDate" name="registrationDate">
+          </div>
+        </div>
+      </div>
+      <!-- last login date -->
+      <div class="form-group">
+        <div class="row">
+          <div class="col-sm-4">
+            <label class="control-label" for="lastLoginDate">Last Login Date</label>
+          </div>
+          <div class="col-sm-8">
+            <input class="form-control" id="lastLoginDate" [(ngModel)]="portalSync.userProfile && portalSync.userProfile.lastLoginDate" name="lastLoginDate">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3"></div>
+  </form>
+</div>

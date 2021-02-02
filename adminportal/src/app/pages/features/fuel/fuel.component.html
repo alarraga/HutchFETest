@@ -1,0 +1,43 @@
+<form class="form-horizontal" #fuelForm="ngForm">
+  <!-- <div class="col-sm-1"></div> -->
+  <div class="col-sm-12">
+    <!-- Permanent fuel increase -->
+    <div class="form-group">
+      <label class="col-sm-3 control-label" for="permanentFuelIncrease">Fuel increase purchased?</label>
+      <button type="button"
+              class="col-sm-3 btn btn-success">
+        Purchase
+      </button>
+    </div>
+    <!-- remaining -->
+    <div class="form-group">
+      <label class="col-sm-3 control-label" for="remaining">Fuel remaining:</label>
+      
+      <input class="col-sm-3 " id="remaining" [ngModel]="portalSync.fuel && portalSync.fuel.remaining" name="remaining">
+      
+     <span class="col-sm-3"></span>
+      <button type="button"
+              class="col-sm-3 btn btn-success">
+        Set Fuel
+      </button>
+      
+      
+    </div>
+    <!-- timer -->
+    <div class="form-group">
+      <label class="col-sm-3 control-label" for="timer">Next fuel available:</label>
+      
+      <input class="col-sm-6" id="timer" [disabled]="true" [(ngModel)]="portalSync.fuel && portalSync.fuel.timer" name="timer">
+      
+      
+    </div>
+    <!-- max -->
+    <div class="form-group">
+      <label class="col-sm-3 control-label" for="max">Max fuel:</label>
+      
+      <input class="col-sm-6" id="max" [disabled]="true" [(ngModel)]="portalSync.fuel && portalSync.fuel.max" name="max">
+      
+    </div>
+  </div>
+  
+</form>
